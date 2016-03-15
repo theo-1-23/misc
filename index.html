@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="Gracey, Gracelle, Mesina, design, creative, Vancouver, ux, experience, branding, visual, SIAT, SFU">
+	<meta name="description" content="Just a g thang from Vancouver who's heart is in designing rad experiences for people and vibrant aesthetics for brands.">
+	<meta name="author" content="Gracelle Mesina">
+	<title>Hi. I'm Gracelle Mesina.</title>
+	<style type="text/css">
+		.thumbnail .test { display:none; }
+	</style>
+</head>
+<body class="index">
+	<!--GRADUSONE-->
+		<div class="thumbnail">
+			<div class="label" id="thumb-gradus">
+				<div class="trans-grad">
+					<a href="gradusone.html">Hover</a>
+				</div>
+			</div>
+			<div class="tags-gradus test"><h4 class="tags">Coming Soon!</h4></div>
+		</div>
+
+		<!--NOVE-->
+		<div class="thumbnail">
+			<div class="label" id="thumb-nove">
+
+				<div class="trans-nove">
+					<a href="nove.html">Over Here</a>
+				</div>
+			</div>
+			<div class="tags-nove test"><h4 class="tags">Film + Cultural Research</h4></div>
+		</div>
+
+		<!--GO2GETHER-->
+		<div class="thumbnail">
+			<div class="label" id="thumb-go2gether">
+				<div class="trans-go2">
+					<a href="go2gether.html">Gracey</a>
+				</div>
+			</div>
+			<div class="tags-go2gether test"><h4 class="tags">Experience + Visual Design</h4></div>
+		</div>
+
+</body>
+</html>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var names = [ 'gradus', 'nove', 'go2gether', 'vsma', 'engage', 'fortune', 'logo', 'cards', 'misc', 'selfie'	];
+
+		for(var i = 0; i < names.length; i++) {
+			$('#thumb-' + names[i]).on('mouseenter mouseleave', function(){ 
+				$(this).siblings().slideToggle(500);
+			});
+		} 
+	});
+</script>
