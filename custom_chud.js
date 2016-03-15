@@ -10,7 +10,9 @@ $(document).ready(function() {
 	*/
 	for (var i = 0; i < array_names.length; i++) {
 		$('#thumb-' + array_names[i]).on('mouseenter mouseleave', function() { 
-			$(this).siblings().slideToggle(500);
+			for (var j = 0; j < array_names.length; j++) {
+				$(this).parent().find('.tags-' + array_names[j]).slideToggle(500);
+			}
 		});
 	} 
 });
