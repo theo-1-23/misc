@@ -1,0 +1,40 @@
+Hey G,
+
+For your HTML, it's all great except for 2 things, your about and email button on the header homepage only. This is your code,
+
+(index.html)
+<div class="navright">
+	<a href="#about"><button type="button" class="purp mint-button">ABOUT</button></a>
+	<a href="mailto:gracellemesina@gmail.com?Subject=Stumbled%20upon%20your%20portfolio..."><button type="button" class="purp mint-button">EMAIL</button></a>
+</div>
+
+(style.css)
+.mint-button:hover {
+  color: #2D3091;
+  background: #1CFFC3;
+}
+
+=======================================================================================================
+
+Only if you want, you could change it to,
+
+(index.html)
+<div class="navright">
+	<a href="#about" class="purp mint-button">ABOUT</a>
+	<a href="mailto:gracellemesina@gmail.com?Subject=Stumbled%20upon%20your%20portfolio..." class="purp mint-button">EMAIL</a>
+</div>
+
+(style.css)
+.mint-button:hover {
+  color: #2D3091;
+  background: #1CFFC3;
+  border-bottom-color: transparent; //add this line
+}
+
+
+-That should take care of the homepage header for those. You also have the those 2 buttons on other sections of your site. You would follow the same concept if you wanna change those.
+
+-Just know that the reason you can't have <button> inside of <a> is because of bad semantics, ie: bad for SEO. Use <a> for navigating to a page or resource (hashtag# or id). And use <button> for custom behaviors within the page (form submit, hide/show elements, ajax requests)
+
+
+
