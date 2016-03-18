@@ -1,0 +1,7 @@
+
+
+1) Put all javascripts externally, and always load scripts at the end of the page (in footer).
+2) Always minify javscripts and css. (meaning, get rid of comments and unused spaces. Basically, everything is all in one line)
+5) Host static files like css, javascript and images over different domain. (Ex : static. anything-other-than-gracellemesina.com )
+6) Use tools likes firebug & yslow to check the load time (firefox browser).
+7) use google's CDN to load JQuery. (Ex: <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script> instead of <script src="js/jquery-1.12.2.min.js"></script>
